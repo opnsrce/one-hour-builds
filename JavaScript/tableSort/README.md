@@ -150,3 +150,5 @@ function sortRoster(property) {
     };
 }
 ```
+### A Note About the Bonus Requirements
+I did a little bit of testing in regards to the bonus requirements. However, I was unable to fully implement the requirement to the specifications given before I ran out of time.
