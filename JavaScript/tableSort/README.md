@@ -11,7 +11,7 @@ The goal of this build project was learn more about the following concepts in Ja
 
 Stats
 ------
-  * **SLOC:**
+  * **SLOC: 97 (table.js)**
   * **Dev Time: 55 minutes 30 seconds**
 
 Requirements
