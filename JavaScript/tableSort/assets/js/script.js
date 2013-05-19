@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
     var table = document.getElementById('roster');
-    populateTable(table, 'full');
+    populateTable(table, 'short');
     bindTableEvents(table);
 }, false);
