@@ -19,12 +19,91 @@ Requirements
 
 Create the following table and populate it with appropriate data:
 
-| ID            | First Name    | Last Name  | City     | Age |
-| ------------- |:-------------:| ----------:|--------: |:---:|
-| 1             | John          | Smith      | Omaha    | 23  |
-| 2             | Sarah         | Jane       | Elkhorn  | 45  |
-| 3             | Mark          | Johnson    | La Vista | 38  |
-| 4             | Eric          | Garnet     | San Jose | 18  |
+<table id="roster">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>City</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Alexandra</td>
+            <td>Gerald</td>
+            <td>Cleveland</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sophie</td>
+            <td>Osborne</td>
+            <td>Brownsville</td>
+            <td>37</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Avery</td>
+            <td>Miller</td>
+            <td>Fremont</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Abigail</td>
+            <td>Cramer</td>
+            <td>Denver</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Leah</td>
+            <td>Gilbert</td>
+            <td>Buffalo</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Aaliyah</td>
+            <td>Owen</td>
+            <td>Eugene</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Jasmine</td>
+            <td>Conors</td>
+            <td>Gainesville</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Aubrey</td>
+            <td>Day</td>
+            <td>GardenGrove</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Kylie</td>
+            <td>Waller</td>
+            <td>Concord</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Kaylee</td>
+            <td>Vance</td>
+            <td>Anchorage</td>
+            <td>40</td>
+        </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
 
 The data provided is only meant to serve as an example. The final result does not need to match exactly. When a user clicks on any table header, the table's data should be sorted by the column header that was clicked.
 
