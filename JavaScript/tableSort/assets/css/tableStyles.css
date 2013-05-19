@@ -1,0 +1,5 @@
+#roster, #roster tr, #roster td, #roster th {
+    border: solid 1px #000000;
+    border-collapse: collapse;
+    padding: 5px;
+}
