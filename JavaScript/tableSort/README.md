@@ -16,7 +16,6 @@ Stats
 
 Requirements
 ------------
-
 Create the following table and populate it with appropriate data:
 
 <table id="roster">
@@ -113,7 +112,6 @@ Scale the number of records in the table up to twenty-thousand and keep the load
 
 Post Mortem
 -----------
-
 This project turned out to be a little more work than I anticipated. Setting up the project (creating the HTML table and loading the data from a JSON object) was rather straight forward. However, when it came time to sort the table data, I started to run into snags. For starters, I could not remember for the life of me what the property was called where an HTML element keeps its `data-` properties. For the record, it's `dataset` and you access it like this:
 
 `myElement.dataset.propertyNameCamelCased`
