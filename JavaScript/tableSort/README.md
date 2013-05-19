@@ -111,8 +111,6 @@ Bonus Requirements
 ------------
 Scale the number of records in the table up to twenty-thousand and keep the load and sort response times below five seconds.
 
-
-
 Post Mortem
 -----------
 
