@@ -27,7 +27,7 @@ All form fields are required and the Grade and the Age fields should only accept
 
 In addition to the above information, the system should also allow the staff member to take a photograph of the student for use on the student's ID card. For the purposes of this project, assume the computer accessing the application has an external webcam attached to it that is facing the student being registered.
 
-Once the staff member has entered all the student's information, they should be to save the information for later retrieval. The system should display a list of all students that have been registered on that particular machine and the staff member should be able to select a student and retrieve their information.
+Once the staff member has entered all the student's information, they should be to save the information for later retrieval. The system should display a list of all students that have been registered on that particular machine.
 
 Post Mortem
 -----------
