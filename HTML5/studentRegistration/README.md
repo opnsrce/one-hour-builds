@@ -11,8 +11,8 @@ The goal of this build project was learn more about the following concepts in Ja
 
 Stats
 ------
-  * **SLOC: 93 (scripts.js)**
-  * **Dev Time: 58 Minutes 48 Seconds**
+  * **SLOC:** 93 (scripts.js)
+  * **Dev Time:** 58 Minutes 48 Seconds
 
 Requirements
 ------------
