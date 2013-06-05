@@ -1,35 +1,15 @@
-var lastStudentId = 1;
-
-function Student(studentInfo) {
-    var studentObject = {
-        id: lastStudentId++,
-        firstName: studentInfo.firstName,
-        lastName: studentInfo.lastName,
-        age: studentInfo.age,
-        grade: studentInfo.grade,
-        photo: studentInfo.photo
-    };
-
-    studentObject.save = function() {
-
-        try {
-            localStorage.setItem('student' + this.id, JSON.stringify(this));
-            successfulSave = true;
-        } catch (e) {
-            successfulSave = false;
-        }
-
-        return successfulSave;
-    };
-
-    return studentObject;
-}
-
 function loadCamera() {
+    'use strict';
+
     var canvas = document.getElementById("photo"),
         context = canvas.getContext("2d"),
         video = document.getElementById("video"),
-        videoObj = {"video": true},
+        videoObj,
+        errBack;
+
+    videoObj = {
+        "video": true
+    };
 
     errBack = function(error) {
         console.log("Video capture error: ", error.code);
@@ -48,19 +28,22 @@ function loadCamera() {
         }, errBack);
     }
 
-    video.addEventListener('canplay', function(e) {
+    video.addEventListener('canplay', function (e) { // Force the video to autoplay in Chrome
         video.style.display = video.style.display;
     });
     document.getElementById("snap").addEventListener("click", function() {
-    	context.drawImage(video, 0, 0, 150, 150);
+        context.drawImage(video, 0, 0, 100, 100);
         video.parentNode.removeChild(video);
+        canvas.style.display = 'block';
     });
 }
 
 window.addEventListener('DOMContentLoaded', function(e) {
+    'use strict';
+
     var form = document.getElementById('student_registration_form'),
-            student,
-            studentList = document.getElementById('student_list');
+        student,
+        studentList = document.getElementById('student_list');
 
     form.addEventListener('submit', function(e) {
         e.cancelBubble = true;
