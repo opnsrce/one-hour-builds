@@ -1,9 +1,7 @@
-function loadCamera() {
+function loadCamera(canvas, video) {
     'use strict';
 
-    var canvas = document.getElementById("photo"),
-        context = canvas.getContext("2d"),
-        video = document.getElementById("video"),
+    var context = canvas.getContext("2d"),
         videoObj,
         errBack;
 
@@ -33,7 +31,6 @@ function loadCamera() {
     });
     document.getElementById("snap").addEventListener("click", function() {
         context.drawImage(video, 0, 0, 100, 100);
-        video.parentNode.removeChild(video);
         canvas.style.display = 'block';
     });
 }
@@ -43,6 +40,9 @@ window.addEventListener('DOMContentLoaded', function(e) {
 
     var form = document.getElementById('student_registration_form'),
         student,
+        canvas = document.getElementById("photo"),
+        newCanvas,
+        video = document.getElementById("video"),
         studentList = document.getElementById('student_list');
 
     form.addEventListener('submit', function(e) {
@@ -69,8 +69,16 @@ window.addEventListener('DOMContentLoaded', function(e) {
         } else {
             alert('Student ' + student.firstName + ' ' + student.lastName + ' was saved successfully');
             form.reset();
+
+            newCanvas = document.createElement('canvas');
+            newCanvas.setAttribute('height', '100');
+            newCanvas.setAttribute('width', '100');
+            newCanvas.id = 'photo';
+
+            video.style.display = ''
+            canvas.style.display = 'none';
             studentList.innerHTML += '<li>' + student.firstName + ' ' + student.lastName + '</li>';
         }
     }, false);
-    loadCamera();
+    loadCamera(canvas, video);
 }, false);
