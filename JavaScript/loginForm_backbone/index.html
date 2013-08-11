@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Backbone Login Form</title>
+        <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1">
+        <link href = "assets/css/styles.css" rel = "stylesheet">
+        <link href = "http://fonts.googleapis.com/css?family=Roboto" rel = "stylesheet">
+        <link href = "http://fonts.googleapis.com/css?family=Fauna+One" rel = "stylesheet">
+        <script src ="assets/js/lib/jquery.js"></script>
+        <script src ="assets/js/lib/underscore.js"></script>
+        <script src = "assets/js/lib/backbone.js"></script>
+        <script src = "assets/js/models/user.js"></script>
+        <script src = "assets/js/views/user/login.js"></script>
+        <script src = "assets/js/router.js"></script>
+        <script src = "assets/js/application.js"></script>
+    </head>
+    <body>
+        <div id = "main-container">
+            <section id = "login-area">
+                <form id = "login-form" action = "index.html" method = "post">
+                    <fieldset>
+                        <legend>Please Login</legend>
+                        <ol id = "form-fields">
+                            <li class = "form-field">
+                                <label for = "username">Username:</label>
+                                <input type= "text" name = "username" id = "username" placeholder = "Username">
+                            </li>
+                            <li class = "form-field">
+                                <label for = "password">Password:</label>
+                                <input type = "password" id = "password" name = "password" placeholder = "Password">
+                            </li>
+                            <li class = "form-field">
+                                <input type = "submit" name = "submit" value = "Login" id = "login-button">
+                            </li>
+                        </ol>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>

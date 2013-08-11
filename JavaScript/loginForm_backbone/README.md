@@ -6,8 +6,8 @@ TBD
 
 Stats
 ------
-  * **SLOC:**
-  * **Dev Time:**
+  * **SLOC:** 55
+  * **Dev Time:** 28m 7s
 
 Requirements
 ------------
