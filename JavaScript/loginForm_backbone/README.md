@@ -26,4 +26,4 @@ Create a form that allows a user to "login". The login form should have a two fi
 Post Mortem
 -----------
 
-TBD
+This project was pretty straight forward. The only part that caused me any difficulty was when I attempted to bind a ``click`` event to the login button. I was having trouble getting the event to fire and that's because I forget to establish the ``el`` property of the login view. I needed to explicitly set this since I wasn't setting the template for the view. Once I set the property value, things started to work.
