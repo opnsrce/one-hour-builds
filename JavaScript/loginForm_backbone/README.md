@@ -2,7 +2,9 @@ Login Form
 ==============
 The goal of this build project was learn more about the following concepts in Backbone.js:
 
-TBD
+  * Handling form submissions
+  * Creating views
+  * Handling error messages
 
 Stats
 ------
