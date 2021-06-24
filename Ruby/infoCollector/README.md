@@ -23,12 +23,12 @@ Write a command-line ruby application that prompts the user to fill in the answe
    * What is your favorite color?
    * Who is your favorite author?
 
-Once the user has answered the above questions, the problem should output the following (including line breaks):
+Once the user has answered the above questions, the program should output the following (including line breaks):
 
     Hello, [name]!
 
     Today, I learned the following things about you:
-        - You are [age] years old.
+        - You are [age] years old.  
         - Your favorite color is [color].
         - Your favorite author is [author].
 
